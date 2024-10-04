@@ -1,0 +1,89 @@
+body{
+    margin: 0;
+    color: aliceblue;
+    background: #20002c;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #cbb4d4, #20002c);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #cbb4d4, #20002c); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+}
+*{
+    font-family: 'Arial',  sans-serif;
+}
+h1{
+    margin: 0;
+}
+.container{
+    max-width: 1080px;
+    height: 80vh;
+    margin: 0 auto;
+    border-radius: 20px;
+}
+#file-upload-button{
+    padding: 10px 15px;
+    background-color: red;
+}
+.title__wrapper{
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.input__wrapper{
+    height: 50%;
+    display: flex;
+    background-color: hsla(0, 0%, 100%, .1);
+    padding: 0 20px;
+    border-radius: 20px;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+}
+
+.custom-file-upload {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background-color: #20002c;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border: 2px solid transparent;
+}
+.generate-btn{
+    padding: 40px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.generate-btn button{
+    width: 100%;
+    padding: 15px 15px;
+    border-radius: 9px;
+    color: #fff;
+    outline: none;
+    background-color: hsla(0, 20%, 100%, .1);
+    border: 2px solid #20002c;
+    cursor: pointer;
+}
+@media screen and (max-width: 500px) {
+    .container{
+        max-width: 100px;
+        margin: 0 auto;
+        padding: 0 30px;
+    }
+}
+@media screen and (max-width: 854px) {
+    .container{
+        max-width: 600px;
+        margin: 0 auto;
+    }
+    
+}
+@media only screen and (max-width:380px) {
+    .container{
+        max-width: 350px;
+        margin: 0 auto;
+    }
+}
